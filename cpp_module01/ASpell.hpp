@@ -5,44 +5,24 @@
 #include <string>
 #include "ATarget.hpp"
 
-using std::string;
-using std::cout;
-using std::endl;
-
 class ATarget;
+
 class ASpell{
 	protected:
-		string name;
-		string effects;
+		std::string name;
+		std::string effects;
 
 	public:
 		ASpell();
 		ASpell(const ASpell& obj);
 		ASpell& operator=(const ASpell& obj);
 		virtual ~ASpell();
-		ASpell(const string &name, const string &title);
-	
-		// void 	setName(const string& name);
-		// void 	setEffects(const string& t);
-		const 	string& getName() const;
-		const 	string& getEffects() const;
+		ASpell(const std::string &name, const std::string &title);
+
+		const 	std::string& getName() const;
+		const 	std::string& getEffects() const;
 		virtual ASpell*	clone() = 0;
 		void	launch(const ATarget& target);
 };
 
 #endif
-
-<--------------~-~-~-~-~-~-~-~-~------------>
-Richard: This looks like another boring day.$
-Richard: I am Richard, the Titled!$
-Target Practice Dummy has been fwooshed!$
-Richard: My job here is done!$
-\n
-<--------------~-~-~-~-~-~-~-~-~------------>\n\n
-<--------------~-~-~-~-~-~-~-~-~------------>
-Richard: This looks like another boring day.$
-Richard: I am Richard, the Titled!$
-Target Practice Dummy has been fwooshed$
-Richard: My job here is done!$
-\n
-<--------------~-~-~-~-~-~-~-~-~------------>

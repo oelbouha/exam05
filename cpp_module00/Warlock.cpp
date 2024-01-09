@@ -1,3 +1,4 @@
+
 #include "Warlock.hpp"
 
 Warlock::Warlock(){}
@@ -26,8 +27,8 @@ void	Warlock::setTitle(const string& title) { this->title = title;}
 
 const string& Warlock::getTitle() const { return title ; }
 
-const string& Warlock::getName() const { return title; }
+const string& Warlock::getName() const { return name; }
 
 void	Warlock::introduce() const{
-	cout << name << ": I am " << ", " << title << "!" << endl;
+	cout << name << ": I am " << name << ", " << title << "!" << endl;
 }

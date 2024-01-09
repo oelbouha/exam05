@@ -21,7 +21,3 @@ const string& ASpell::getName() const { return name; }
 void	ASpell::launch(const ATarget& target){
 	target.getHitBySpell(*this);
 }
-
-// void	ASpell::setName(const string& name) { this->name = name;}
-
-// void	ASpell::setEffects(const string& title) { this->effects = title;}
